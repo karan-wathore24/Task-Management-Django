@@ -1,0 +1,98 @@
+/* Dashboard Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.welcome-card .card-header {
+    background: rgba(255,255,255,0.1);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.welcome-card .card-body h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.welcome-card .card-body p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.action-cards .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.action-cards .card-body {
+    padding: 30px;
+}
+
+.action-cards .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.action-cards .card-text {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.action-cards .btn {
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.action-cards .btn:hover {
+    transform: scale(1.05);
+}
+
+.welcome-card .card-footer {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.welcome-card .card-footer p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.welcome-card .card-footer .btn {
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-weight: 600;
+    background-color: #dc3545;
+    transition: all 0.3s ease;
+}
+
+.welcome-card .card-footer .btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+

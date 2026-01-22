@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #495057;
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Page headings */
+h1 {
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #007bff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6c757d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Hero image */
+img.d-block.w-100 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+/* Navbar styles (matching nav.html) */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: #00ff88 !important;
+    border-color: #00ff88 !important;
+    color: #000 !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00cc6a !important;
+    border-color: #00cc6a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.btn-success {
+    background-color: #00ff88 !important;
+    border-color: #00ff88 !important;
+    color: #000 !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #00cc6a !important;
+    border-color: #00cc6a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.btn-outline-light {
+    border-color: #00ff88 !important;
+    color: #00ff88 !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #00ff88 !important;
+    border-color: #00ff88 !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 255, 136, 0.2) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%);
+    border-radius: 0 0 50px 50px;
+    margin-bottom: 50px;
+}
+
+/* Form Styling */
+.form-label {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.form-control::placeholder {
+    color: #ffffff !important;
+    opacity: 0.7;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a !important;
+    border-color: #00ff88 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 136, 0.25);
+}
+
+/* Registration Card */
+.registration-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 255, 136, 0.1) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 30px 0 15px;
+    }
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    img.d-block.w-100 {
+        border-radius: 5px;
+    }
+}
