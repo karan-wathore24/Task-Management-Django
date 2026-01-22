@@ -2,13 +2,12 @@
 # Exit on error
 set -o errexit
 
-# 1. Install dependencies from the root directory
+# Install requirements from the main folder
 pip install -r requirements.txt
 
-# 2. Go into the folder where manage.py is located
+# Move into the folder where manage.py lives
 cd todo_list
 
-# 3. Run the Django commands from inside that folder
+# NOW run the commands
 python manage.py collectstatic --no-input
-python manage.py makemigrations
 python manage.py migrate
