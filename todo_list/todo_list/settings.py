@@ -24,11 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-p8d4cg4@d6k(^dz0yyx7xgk8crt*n9v%s%kx4!dcgt326f*@c#')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+# DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 
-
+ALLOWED_HOSTS = ["*"]  # okay for testing
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # Application definition
 
 INSTALLED_APPS = [

@@ -1,2 +1,5 @@
-Django==6.0
-gunicorn==21.2.0
+Django==<version>
+gunicorn
+whitenoise
+dj-database-url
+psycopg2-binary
