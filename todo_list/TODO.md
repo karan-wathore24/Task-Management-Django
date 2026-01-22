@@ -1,8 +1,8 @@
-# TODO: Fix Forget Password Functionality
+# Deployment to Render
 
 ## Tasks
-- [x] Fix `forget_valid` view in `views.py` to properly verify user using `User.objects.get`
-- [x] Add URL patterns for `forget_valid` and `upd_pss` in `urls.py`
-- [x] Modify `upd_pss` view to securely retrieve user (e.g., via hidden form field)
-- [x] Test the forget password flow
-- [x] Verify security and functionality
+- [x] Create requirements.txt with Django and dependencies
+- [x] Edit settings.py for production: DEBUG=False, ALLOWED_HOSTS, SECRET_KEY from env
+- [x] Create Procfile for Render
+- [ ] Push code to GitHub
+- [ ] Deploy on Render
