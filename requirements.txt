@@ -1,4 +1,4 @@
-Django==<version>
+Django>=4.2,<5.0
 gunicorn
 whitenoise
 dj-database-url
