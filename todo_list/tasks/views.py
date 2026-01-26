@@ -22,6 +22,7 @@ def delete(request,id):
 
 
 
+
 @login_required(login_url="login_page")
 def addtask(request):
     if request.method == "POST":
@@ -45,3 +46,27 @@ def mark_done(request, id):
     task.completed = True
     task.save()
     return redirect("tasks")
+
+@login_required(login_url="login_page")
+def update_task(request, id):
+    task = Task.objects.get(id=id, user=request.user)
+    return render(request, "update.html", {"task": task})
+
+@login_required(login_url="login_page")
+def upd_task(request, id):
+    if request.method=="POST":
+        tt=request.POST['title']
+        ds = request.POST['description']
+
+        if tt and ds:
+            task = Task.objects.get(id=id, user=request.user)
+            task.title = tt
+            task.description = ds
+            task.save()
+            messages.success(request, "Task is Updated")
+            return redirect("tasks")
+        else:
+            messages.error(request, "Fill all fields")
+            return redirect("update_task", id=id)
+    else:
+        return redirect("tasks")
